@@ -1,0 +1,7 @@
+[controller]
+control ansible_connection=local
+
+[apa]
+test.local ansible_user=ansible
+d2 ansible_user=ansible
+
