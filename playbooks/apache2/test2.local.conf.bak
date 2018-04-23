@@ -1,0 +1,11 @@
+<VirtualHost *:81>
+    ServerAdmin admin@example.com
+    ServerName test2.local
+    DocumentRoot /var/www/test2.local/dyn
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+#    CustomLog ${APACHE_LOG_DIR}/access.log combined
+    CustomLog ${APACHE_LOG_DIR}/test2_access.log combined
+   <IfModule mpm_itk_module>
+      AssignUserId test2local_admin test2local
+   </IfModule>
+</VirtualHost>
