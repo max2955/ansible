@@ -194,7 +194,7 @@
        state: present
    - mysql_user:
        name: joomla2@localhost
-       password: JoomlaPassword1
+       password: JoomlaPassword2
        priv: 'joomla_db2.*:ALL'
        state: present
    - name: Configure PHP
